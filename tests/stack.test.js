@@ -4,6 +4,11 @@ test('peek on empty stack returns undefined', () => {
     expect(stack.peek()).toBeUndefined();
 });
 
+test('pushing of empty values should be ignored', () => {
+    stack.push("");
+    expect(stack.peek()).toBe(undefined);
+});
+
 test('peek on stack with one element returns that element', () => {
     stack.push(1);
     expect(stack.peek()).toBeDefined();
