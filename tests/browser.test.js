@@ -25,7 +25,7 @@ test('The stack should be empty in the beginning', async () => {
 
 test('peeking an empty stack exactly 42 times in a row adds a good movie to the stack', async () => {
     let stack = await driver.findElement(By.id('peek'));
-    for (let i = 0; i < 41; i++) {
+    for (let i = 0; i < 42; i++) {
         stack.click();
         let text = await driver.findElement(By.id('top_of_stack')).getText();
         expect(text).toEqual("undefined");    
