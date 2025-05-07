@@ -1,0 +1,14 @@
+{
+  "name": "testing-with-jest",
+  "version": "1.0.0",
+  "description": "Testing project with jest",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  },
+  "author": "Sebastian Ledung",
+  "license": "Apache-2.0"
+}
